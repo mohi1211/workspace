@@ -2,6 +2,9 @@
 #writen by s8_ken
 #2016/10/28
 
+#I want to use github!!!!!
+
+
 # -*- coding; utf-8 -*-
 
 def _rot3(x,c):
