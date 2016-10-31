@@ -24,10 +24,10 @@ def rot3(x,s):
     return g
 
 def main():
-    print "rot? : "
-    x = int(raw_input())
-    print "cypher text ? : "
-    s = raw_input()
+    print ("rot? : ")
+    x = int(input())
+    print ("cypher text ? : ")
+    s = input()
     print(rot3(x,s))
 
 
