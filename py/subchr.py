@@ -8,6 +8,15 @@ def subchr(a,b):
 
     return ord(a)-ord(b)
 
-def main:
+def main():
+    a = input()
+    b = input()
+    print (subchr(a,b))
+
+
+if __name__ =='__main__':
+    main()
+    
+
     
 
