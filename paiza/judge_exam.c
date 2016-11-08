@@ -9,12 +9,14 @@ void extract(char* t,int* e, int * m,int* s, int* J, int*g){
   int i=0,j=0;
   char tmp[10]={0};
   fgets(str,sizeof(str),stdin);
+  //  printf("%s\n",str);
   while((str[i] != ' ') && (str[i] != '\n')){
     tmp[j] = str[i];
     i++;
     j++;
   }
-  *t = tmp[j];
+  *t = tmp[j-1];
+  //  printf("t=%c\n", *t);
   j=0;
   i++;
   while((str[i] != ' ') && (str[i] != '\n')){
@@ -23,6 +25,7 @@ void extract(char* t,int* e, int * m,int* s, int* J, int*g){
     j++;
   }
   *e = atoi(tmp);
+  //  printf("e = %d\n",*e);
   j=0;
   i++;
   while((str[i] != ' ') && (str[i] != '\n')){
@@ -31,7 +34,7 @@ void extract(char* t,int* e, int * m,int* s, int* J, int*g){
     j++;
   }
   *m = atoi(tmp);
-
+  //  printf("m = %d\n",*m);
   j=0;
   i++;
   while((str[i] != ' ') && (str[i] != '\n')){
@@ -40,7 +43,7 @@ void extract(char* t,int* e, int * m,int* s, int* J, int*g){
     j++;
   }
   *s = atoi(tmp);
-
+  //  printf("s = %d\n",*s);
   j=0;
   i++;
   while((str[i] != ' ') && (str[i] != '\n')){
@@ -49,7 +52,7 @@ void extract(char* t,int* e, int * m,int* s, int* J, int*g){
     j++;
   }
   *J = atoi(tmp);
-
+  //  printf("J = %d\n",*J);
   j=0;
   i++;
   while((str[i] != ' ') && (str[i] != '\n')){
@@ -58,7 +61,7 @@ void extract(char* t,int* e, int * m,int* s, int* J, int*g){
     j++;
   }
   *g = atoi(tmp);
-
+  //  printf("g = %d\n",*g);
   j=0;
   i++;
 
