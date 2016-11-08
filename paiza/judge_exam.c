@@ -5,9 +5,9 @@
 void extract(char* t,int* e, int * m,int* s, int* J, int*g);
 
 void extract(char* t,int* e, int * m,int* s, int* J, int*g){
-  char str[1000];
+  char str[1000]={0};
   int i=0,j=0;
-  char tmp[10];
+  char tmp[10]={0};
   fgets(str,sizeof(str),stdin);
   while((str[i] != ' ') && (str[i] != '\n')){
     tmp[j] = str[i];
