@@ -16,8 +16,8 @@ paiza otokucalc.c
 void readinput(int* kind, int* price);
 
 void readinput(int* kind, int* price){
-  char str[1000];
-  char tmp[10];
+  char str[1000]={0};
+  char tmp[10]={0};
   int i;
   
   fgets(str,sizeof(str),stdin);
@@ -35,11 +35,11 @@ void readinput(int* kind, int* price){
 
 int main(void){
 
-  int item[2][1024]={0};
+  int item[2][1024]={{0}};
   int food_sum=0,book_sum=0,cloth_sum=0,other_sum=0,p_sum=0;
   int N;
   
-  char str[1000];
+  char str[1000]={0};
   int i,kind,price;
 
   fgets(str,sizeof(str),stdin);
