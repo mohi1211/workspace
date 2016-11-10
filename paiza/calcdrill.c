@@ -40,7 +40,7 @@ int main(void){
   }
 
   x_b = c-a;
-  if(op='-'){
+  if(op=='-'){
     b = (-1) * b;
     x_b = (-1) * x_b;
   }
