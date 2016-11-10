@@ -34,7 +34,7 @@ int main(void){
   }
 
   if(str[8]!='x'){
-    a = (int)(str[6])-(int)('0');
+    c = (int)(str[8])-(int)('0');
   }else{
     whereisx = 'c';
   }
@@ -47,8 +47,8 @@ int main(void){
   x_a = c - b;
   x_c = a + b;
 
-  //  printf("a = %d, b = %d, c = %d, whereisx = %c\n",a,b,c,whereisx);
-  //  printf("x_a = %d, x_b = %d, x_c = %d\n",x_a,x_b,x_c);
+  printf("a = %d, b = %d, c = %d, whereisx = %c\n",a,b,c,whereisx);
+  printf("x_a = %d, x_b = %d, x_c = %d\n",x_a,x_b,x_c);
 
   switch(whereisx){
   case'a':
